@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="down_gps <= -101.6\nsquared_error = 23.1\nsamples = 5439\nvalue = 3.2"] ;
+1 [label="alt_gps <= 103.0\nsquared_error = 576.3\nsamples = 13\nvalue = 62.8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="roll_ins <= 0.0\nsquared_error = 29.4\nsamples = 6\nvalue = 86.9"] ;
+1 -> 2 ;
+3 [label="squared_error = 3.1\nsamples = 3\nvalue = 81.1"] ;
+2 -> 3 ;
+4 [label="squared_error = 2.5\nsamples = 3\nvalue = 91.5"] ;
+2 -> 4 ;
+5 [label="lon_gps <= -1.3\nsquared_error = 78.6\nsamples = 7\nvalue = 41.1"] ;
+1 -> 5 ;
+6 [label="squared_error = 28.8\nsamples = 3\nvalue = 49.4"] ;
+5 -> 6 ;
+7 [label="squared_error = 35.3\nsamples = 4\nvalue = 35.6"] ;
+5 -> 7 ;
+8 [label="lon_sigma <= 6.1\nsquared_error = 14.0\nsamples = 5426\nvalue = 3.1"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="lon_sigma <= 2.5\nsquared_error = 3.8\nsamples = 4531\nvalue = 2.2"] ;
+8 -> 9 ;
+10 [label="squared_error = 1.9\nsamples = 3281\nvalue = 1.7"] ;
+9 -> 10 ;
+11 [label="squared_error = 6.6\nsamples = 1250\nvalue = 3.5"] ;
+9 -> 11 ;
+12 [label="alt_gps <= 55.7\nsquared_error = 43.8\nsamples = 895\nvalue = 7.3"] ;
+8 -> 12 ;
+13 [label="squared_error = 40.9\nsamples = 227\nvalue = 11.5"] ;
+12 -> 13 ;
+14 [label="squared_error = 36.2\nsamples = 668\nvalue = 5.8"] ;
+12 -> 14 ;
+}
